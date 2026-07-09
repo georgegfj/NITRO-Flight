@@ -243,5 +243,5 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("reset", cmd_reset))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    logger.info("NITRO P.A.W.S.-Lite Telegram bot is running.")
+    logger.info("NITRO FLIGHT Telegram bot is running.")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
