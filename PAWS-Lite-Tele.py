@@ -36,7 +36,7 @@ GEN_MODEL          = "gemini-3.5-flash"
 FALLBACK_MODEL     = "gemma-3-27b-it"
 SYSTEM_PROMPT_FILE = pathlib.Path("PAWS_Gemini Markdown.md")
 TOP_K              = 5
-SHEET_NAME         = "PAWS Conversations"
+SHEET_NAME         = "NITRO FLIGHT Conversations"
 
 # In-memory conversation store: {chat_id: {"session_id": str, "messages": [...]}}
 conversations: dict = {}
