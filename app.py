@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 
 import gspread
 import streamlit as st
+from PIL import Image
 from google import genai
 from google.genai import types
 from google.oauth2 import service_account
@@ -49,7 +50,7 @@ def load_knowledge_base():
 def load_sheet():
     """Returns a gspread worksheet, or None if not configured."""
     try:
-        sa_info = dict(st.secrets["firestore"])
+        sa_info = dict(st.secrets["gcp_service_account"])
         creds   = service_account.Credentials.from_service_account_info(
             sa_info,
             scopes=["https://spreadsheets.google.com/feeds",
@@ -104,13 +105,14 @@ def retrieve_context(gemini_client, query: str) -> str:
 
 # ── Streamlit UI ──────────────────────────────────────────────────────────────
 
+_logo = Image.open("logo.png")
 st.set_page_config(
     page_title="NITRO FLIGHT",
-    page_icon="✈️",
+    page_icon=_logo,
     layout="centered",
 )
 
-st.title("✈️ NITRO FLIGHT")
+st.image("logo.png", width=220)
 st.caption("Portable Project Advisor · Powered by TTSH NITRO")
 st.info(
     "Got a project idea on the go? **NITRO FLIGHT** helps you develop and evaluate it anywhere. "
