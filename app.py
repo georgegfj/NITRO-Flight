@@ -116,7 +116,7 @@ st.image("logo.png", width=220)
 st.caption("Portable Project Advisor · Powered by TTSH NITRO")
 st.info(
     "Got a project idea on the go? **NITRO FLIGHT** helps you develop and evaluate it anywhere. "
-    "Once you're ready to write it up, continue with **NITRO P.A.W.S.** on "
+    "Once you're ready to write it up, continue with **NITRO FLIGHT** on "
     "[pair.gov.sg](https://pair.gov.sg) — on a clean computer.",
     icon="✈️",
 )

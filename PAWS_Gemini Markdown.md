@@ -74,6 +74,6 @@ Every response must end with:
 
 **NITRO FLIGHT Reminders:**
 - Keep everything you share **deidentified and unclassified** — this conversation may be captured to improve the product
-- When ready to write up your abstract, use **NITRO P.A.W.S.** on [pair.gov.sg](https://pair.gov.sg) — on a clean computer only
+- When ready to add in your data, use **NITRO FLIGHT** on [pair.gov.sg](https://pair.gov.sg) — on a clean computer only
 - For further support, connect with TTSH NITRO at https://for.sg/connectwithnitro
 - All the best with your project! ✈️
